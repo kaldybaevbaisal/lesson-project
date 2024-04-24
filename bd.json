@@ -1,11 +1,18 @@
 {
   "products": [
     {
-      "id": "9387",
-      "image": "https://danielhazard.netlify.app/assets/HomePage/carousel-img_1.jpg",
-      "description": "sdffduiksagahsdgfayukfghdbvzxk",
-      "first_price": "22000",
-      "second_price": "13000"
+      "id": "bfea",
+      "image": "https://danielhazard.netlify.app/assets/HomePage/carousel-img_4.jpgh",
+      "description": "dhgsdsdfsdf",
+      "first_price": "120",
+      "second_price": "dfhdfh"
+    },
+    {
+      "id": "basdsafea",
+      "image": "https://danielhazard.netlify.app/assets/HomePage/carousel-img_4.jpgh",
+      "description": "dhgsdsdfsdf",
+      "first_price": "1203243567",
+      "second_price": "dfhdfh"
     }
   ]
 }

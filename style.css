@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .header {
   padding: 20px 40px;
   display: flex;
@@ -11,9 +12,11 @@
   align-items: center;
   background-color: black;
 }
+
 .header img {
   width: 100px;
 }
+
 .header button {
   padding: 15px 35px;
   border-radius: 10px;
@@ -21,6 +24,7 @@
   background-color: white;
   cursor: pointer;
 }
+
 .modal {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.674);
@@ -32,6 +36,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .modal-inner {
   display: flex;
   flex-direction: column;
@@ -42,16 +47,19 @@
   border-radius: 10px;
   position: relative;
 }
+
 .modal-inner input {
   padding: 10px 10px;
   width: 250px;
   border-radius: 10px;
   border: none;
 }
+
 .modal-inner h1 {
   color: white;
   margin-bottom: 20px;
 }
+
 .modal-inner button {
   padding: 15px 35px;
   margin-top: 10px;
@@ -59,6 +67,7 @@
   border: none;
   cursor: pointer;
 }
+
 #products {
   padding: 30px 20px;
   display: flex;
@@ -67,6 +76,7 @@
   max-width: 1100px;
   margin: 0 auto;
 }
+
 .card {
   width: 250px;
   text-align: center;
@@ -74,33 +84,98 @@
   transition: 0.4s;
   padding-bottom: 20px;
 }
+
 .card img {
   width: 100%;
   border: 1px solid #eeeeee;
 }
+
 .card > p {
   margin: 10px 5px 10px 5px;
   color: #1d1e1f;
 }
+
 .card-price {
   display: flex;
   justify-content: center;
   gap: 5px;
 }
+
 .card-price p:first-child {
   text-decoration: line-through;
   color: #999999;
 }
+
 .card-price p:last-child {
   font-weight: bold;
 }
+
 .card:hover {
   box-shadow: 5px 5px 30px #9b9b9b95;
 }
-#close-add-modal {
+
+#close-add-modal,
+#close-edit-modal {
   width: 20px;
   cursor: pointer;
   position: absolute;
   top: 20px;
   right: 20px;
+}
+
+/* details */
+.details {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.details-inner {
+  display: flex;
+  gap: 50px;
+}
+
+.details-inner img {
+  width: 300px;
+}
+
+.details-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+#close-details {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.details-text button {
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.details-text button:first-of-type {
+  background-color: #da2800;
+}
+.details-text button:last-child {
+  background-color: #006eff;
+}
+
+@media all and (max-width: 800px) {
+  .details-inner {
+    flex-direction: column;
+  }
 }
